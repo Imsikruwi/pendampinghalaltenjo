@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO OPTIMAL UNTUK GOOGLE MAPS & PENCARIAN LOKAL ═══ -->
+  <title>Pendamping Halal Tenjo | Sertifikasi Halal Gratis UMKM Bogor Barat</title>
+  <meta name="description" content="Layanan Sertifikasi Halal GRATIS untuk Pelaku Usaha Mikro di Tenjo, Bogor Barat. Pendamping Proses Produk Halal resmi No. 2602000861. Hubungi WA 089627247603." />
+  <meta name="keywords" content="pendamping halal tenjo, sertifikasi halal gratis tenjo, halal UMKM tenjo bogor, pendamping PPH tenjo, BPJPH bogor barat, sertifikat halal gratis usaha mikro tenjo, pendamping proses produk halal 2602000861" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="ID-JB" />
+  <meta name="geo.placename" content="Tenjo, Bogor, Jawa Barat" />
+  <meta property="og:title" content="Pendamping Halal Tenjo – Sertifikasi Halal Gratis UMKM" />
+  <meta property="og:description" content="Pendamping Proses Produk Halal resmi untuk UMKM Tenjo & sekitarnya. Gratis, mudah, terpercaya." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pendamping Halal Tenjo",
+    "description": "Layanan Sertifikasi Halal GRATIS dan Pendampingan Proses Produk Halal untuk Usaha Mikro di Kecamatan Tenjo, Bogor Barat",
+    "telephone": "+62089627247603",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tenjo",
+      "addressRegion": "Kabupaten Bogor, Jawa Barat",
+      "addressCountry": "ID"
+    },
+    "identifier": "2602000861",
+    "priceRange": "Gratis",
+    "openingHours": "Mo-Fr 08:00-16:00"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ══════════════════════════════════════════
+       DESIGN SYSTEM — FLAT, NO GRADIENTS
+       Ungu  #4B2C7A  (deep royal purple)
+       Hijau #1D6B3E  (islamic green)
+       Emas  #C89A2E  (gold accent)
+       Putih #FAFAF5
+    ══════════════════════════════════════════ */
+    :root {
+      --ungu:       #4B2C7A;
+      --ungu-muda:  #6B3FA6;
+      --ungu-pale:  #F0EAF8;
+      --hijau:      #1D6B3E;
+      --hijau-muda: #268A50;
+      --hijau-pale: #E8F5EE;
+      --emas:       #C89A2E;
+      --emas-pale:  #FDF5DC;
+      --hitam:      #16121F;
+      --abu:        #6B6478;
+      --putih:      #FAFAF5;
+      --border:     #E2D9EF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--putih);
+      color: var(--hitam);
+      overflow-x: hidden;
+    }
+
+    /* ── ISLAMIC GEOMETRIC SVG PATTERN (CSS Background) ── */
+    .pattern-bg {
+      background-color: var(--ungu);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Crect width='56' height='100' fill='none'/%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66zm0-6l22-12.7V24.7L28 12 6 24.7v22.6L28 60z' fill='%23ffffff' fill-opacity='0.06'/%3E%3C/svg%3E");
+    }
+
+    .pattern-hijau {
+      background-color: var(--hijau);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Crect width='56' height='100' fill='none'/%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66zm0-6l22-12.7V24.7L28 12 6 24.7v22.6L28 60z' fill='%23ffffff' fill-opacity='0.06'/%3E%3C/svg%3E");
+    }
+
+    /* ══ NAV ══════════════════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+      background: var(--ungu);
+      border-bottom: 3px solid var(--emas);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 6vw; height: 64px;
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Amiri', serif;
+      font-size: 1.1rem; font-weight: 700; color: #fff;
+      text-decoration: none;
+    }
+    .nav-brand .badge {
+      background: var(--emas);
+      color: var(--hitam);
+      font-size: 0.65rem; font-weight: 700;
+      padding: 2px 8px; border-radius: 3px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex; gap: 32px; list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none; font-size: 0.85rem;
+      font-weight: 500; letter-spacing: 0.04em;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--emas); }
+    .nav-wa {
+      display: flex; align-items: center; gap: 8px;
+      background: #25D366; color: #fff;
+      padding: 8px 18px; border-radius: 6px;
+      font-size: 0.82rem; font-weight: 700;
+      text-decoration: none; transition: opacity .2s;
+    }
+    .nav-wa:hover { opacity: 0.88; }
+
+    /* ══ HERO ═════════════════════════════════════════════ */
+    .hero {
+      padding: 120px 6vw 80px;
+      background: var(--ungu);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Crect width='56' height='100' fill='none'/%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66zm0-6l22-12.7V24.7L28 12 6 24.7v22.6L28 60z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+      position: relative; overflow: hidden;
+      display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
+    }
+
+    /* Ornamen bintang islami SVG kanan */
+    .hero-ornament {
+      position: relative; flex-shrink: 0;
+      width: 260px; height: 260px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-ornament svg {
+      width: 100%; height: 100%;
+      opacity: 0.18;
+      animation: spin-slow 40s linear infinite;
+    }
+    @keyframes spin-slow { to { transform: rotate(360deg); } }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--emas);
+      color: var(--hitam);
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 4px;
+      margin-bottom: 22px;
+      animation: fadeUp .5s ease both;
+    }
+    .hero h1 {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      line-height: 1.15; color: #fff;
+      margin-bottom: 18px;
+      animation: fadeUp .6s .1s ease both;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--emas);
+      display: block;
+    }
+    .hero-desc {
+      font-size: 1rem; line-height: 1.75;
+      color: rgba(255,255,255,0.72);
+      max-width: 520px; margin-bottom: 36px;
+      animation: fadeUp .6s .2s ease both;
+    }
+    .hero-actions {
+      display: flex; flex-wrap: wrap; gap: 14px;
+      animation: fadeUp .6s .3s ease both;
+    }
+    .btn-primer {
+      background: var(--hijau); color: #fff;
+      padding: 14px 30px; border-radius: 6px;
+      font-size: 0.95rem; font-weight: 700;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primer:hover { background: var(--hijau-muda); transform: translateY(-2px); }
+    .btn-sekunder {
+      background: transparent; color: #fff;
+      padding: 13px 26px; border-radius: 6px;
+      font-size: 0.95rem; font-weight: 600;
+      text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.35);
+      transition: border-color .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-sekunder:hover { border-color: var(--emas); color: var(--emas); transform: translateY(-2px); }
+
+    /* bottom emas strip */
+    .hero::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+      background: var(--emas);
+    }
+
+    /* ══ REGISTRASI BAR ═══════════════════════════════════ */
+    .reg-bar {
+      background: var(--emas-pale);
+      border-top: 1px solid var(--emas);
+      border-bottom: 3px solid var(--emas);
+      padding: 14px 6vw;
+      display: flex; flex-wrap: wrap; align-items: center;
+      justify-content: center; gap: 12px 32px;
+      font-size: 0.88rem; color: var(--hitam);
+    }
+    .reg-bar strong { color: var(--ungu); }
+    .reg-item { display: flex; align-items: center; gap: 8px; }
+    .reg-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--hijau); flex-shrink: 0;
+    }
+
+    /* ══ STATS STRIP ══════════════════════════════════════ */
+    .stats {
+      background: var(--hijau);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Crect width='56' height='100' fill='none'/%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66zm0-6l22-12.7V24.7L28 12 6 24.7v22.6L28 60z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+      display: flex; flex-wrap: wrap;
+    }
+    .stat {
+      flex: 1; min-width: 180px; padding: 28px 20px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-n {
+      font-family: 'Amiri', serif;
+      font-size: 2.4rem; font-weight: 700; color: var(--emas);
+    }
+    .stat-l { color: rgba(255,255,255,0.78); font-size: 0.85rem; margin-top: 4px; }
+
+    /* ══ SECTIONS COMMON ══════════════════════════════════ */
+    section { padding: 80px 6vw; }
+    .sec-eye {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ungu-muda); margin-bottom: 10px;
+    }
+    .sec-eye::before {
+      content: '';
+      display: inline-block; width: 24px; height: 2px;
+      background: var(--ungu-muda);
+    }
+    .sec-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      line-height: 1.2; margin-bottom: 14px; color: var(--hitam);
+    }
+    .sec-desc {
+      font-size: 0.97rem; line-height: 1.75;
+      color: var(--abu); max-width: 540px; margin-bottom: 52px;
+    }
+
+    /* ══ LAYANAN ══════════════════════════════════════════ */
+    .sec-layanan { background: var(--putih); }
+    .layanan-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2px;
+      border: 2px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+    .l-card {
+      background: #fff;
+      padding: 36px 30px;
+      border-right: 2px solid var(--border);
+      border-bottom: 2px solid var(--border);
+      transition: background .2s;
+      position: relative;
+    }
+    .l-card:hover { background: var(--ungu-pale); }
+    .l-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--ungu);
+      transform: scaleY(0); transform-origin: top;
+      transition: transform .25s;
+    }
+    .l-card:hover::before { transform: scaleY(1); }
+    .l-icon {
+      width: 52px; height: 52px;
+      background: var(--ungu-pale);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 20px;
+      color: var(--ungu);
+    }
+    .l-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+    .l-card p { font-size: 0.87rem; line-height: 1.7; color: var(--abu); }
+
+    /* ══ ALUR SERTIFIKASI ══════════════════════════════════ */
+    .sec-alur { background: var(--ungu-pale); }
+    .alur-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0;
+      position: relative;
+    }
+    .alur-wrap::before {
+      content: '';
+      position: absolute; top: 38px; left: 10%; right: 10%; height: 2px;
+      background: var(--border);
+      z-index: 0;
+    }
+    .alur-step {
+      text-align: center; padding: 0 16px;
+      position: relative; z-index: 1;
+    }
+    .alur-num {
+      width: 76px; height: 76px; border-radius: 50%;
+      background: var(--ungu); color: #fff;
+      font-family: 'Amiri', serif; font-size: 1.6rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      border: 4px solid var(--putih);
+      box-shadow: 0 0 0 2px var(--ungu);
+      transition: background .2s;
+    }
+    .alur-step:hover .alur-num { background: var(--hijau); box-shadow: 0 0 0 2px var(--hijau); }
+    .alur-step h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--hitam); }
+    .alur-step p { font-size: 0.82rem; line-height: 1.65; color: var(--abu); }
+
+    /* ══ KENAPA HALAL ══════════════════════════════════════ */
+    .sec-kenapa {
+      background: var(--hijau);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Crect width='56' height='100' fill='none'/%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66zm0-6l22-12.7V24.7L28 12 6 24.7v22.6L28 60z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+      display: flex; flex-wrap: wrap; gap: 60px; align-items: center;
+    }
+    .kenapa-text { flex: 1; min-width: 280px; }
+    .kenapa-text .sec-eye { color: var(--emas); }
+    .kenapa-text .sec-eye::before { background: var(--emas); }
+    .kenapa-text .sec-title { color: #fff; }
+    .kenapa-text .sec-desc { color: rgba(255,255,255,0.7); max-width: 440px; }
+    .kenapa-list { list-style: none; }
+    .kenapa-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.88); font-size: 0.93rem;
+      line-height: 1.6;
+    }
+    .kenapa-list li:last-child { border-bottom: none; }
+    .kenapa-list li .k-icon {
+      width: 28px; height: 28px; border-radius: 6px; flex-shrink: 0;
+      background: rgba(200,154,46,0.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+    }
+    .kenapa-board {
+      flex: 0 0 300px;
+      background: var(--ungu);
+      border-radius: 16px; padding: 40px 32px;
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+    /* 8-pointed star ornament inline SVG */
+    .kenapa-board .star-svg {
+      display: block; margin: 0 auto 20px;
+      width: 80px; height: 80px;
+    }
+    .kenapa-board .cert-no {
+      font-family: 'Amiri', serif; font-size: 1.05rem;
+      color: var(--emas); text-align: center;
+      letter-spacing: 0.06em; margin-bottom: 8px;
+    }
+    .kenapa-board p {
+      color: rgba(255,255,255,0.65); font-size: 0.82rem;
+      text-align: center; line-height: 1.65;
+    }
+    .kenapa-board .reg-badge {
+      margin: 20px auto 0;
+      background: var(--emas); color: var(--hitam);
+      font-size: 0.78rem; font-weight: 700;
+      padding: 6px 16px; border-radius: 4px;
+      text-align: center; letter-spacing: 0.06em;
+      display: block;
+    }
+
+    /* ══ KONTAK ═══════════════════════════════════════════ */
+    .sec-kontak { background: var(--putih); }
+    .kontak-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .k-card {
+      background: #fff;
+      border: 2px solid var(--border);
+      border-radius: 12px; padding: 28px 24px;
+      display: flex; align-items: flex-start; gap: 16px;
+      transition: border-color .2s, transform .2s;
+    }
+    .k-card:hover { border-color: var(--ungu); transform: translateY(-4px); }
+    .k-icon {
+      width: 48px; height: 48px; border-radius: 10px; flex-shrink: 0;
+      background: var(--ungu-pale);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.35rem; color: var(--ungu);
+    }
+    .k-card h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--abu); margin-bottom: 5px; }
+    .k-card p { font-size: 0.97rem; font-weight: 700; color: var(--hitam); }
+    .k-card a { color: var(--hijau); text-decoration: none; }
+    .k-card a:hover { text-decoration: underline; }
+
+    .cta-box {
+      margin-top: 48px;
+      background: var(--ungu);
+      border-radius: 16px;
+      padding: 48px 40px;
+      display: flex; flex-wrap: wrap;
+      align-items: center; justify-content: space-between; gap: 24px;
+      /* Ornament inside */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Crect width='56' height='100' fill='none'/%3E%3Cpath d='M28 66L0 50V18L28 2l28 16v32L28 66zm0-6l22-12.7V24.7L28 12 6 24.7v22.6L28 60z' fill='%23ffffff' fill-opacity='0.05'/%3E%3C/svg%3E");
+      border-top: 4px solid var(--emas);
+    }
+    .cta-box h2 {
+      font-family: 'Amiri', serif; font-size: 1.7rem;
+      color: #fff; margin-bottom: 8px;
+    }
+    .cta-box p { color: rgba(255,255,255,0.7); font-size: 0.92rem; }
+    .cta-box .btn-primer { font-size: 1rem; padding: 16px 36px; }
+
+    /* ══ FOOTER ═══════════════════════════════════════════ */
+    footer {
+      background: var(--hitam);
+      padding: 40px 6vw;
+      display: flex; flex-wrap: wrap;
+      justify-content: space-between; align-items: center; gap: 20px;
+      border-top: 4px solid var(--emas);
+    }
+    .footer-brand {
+      font-family: 'Amiri', serif;
+      font-size: 1.15rem; font-weight: 700; color: #fff;
+    }
+    .footer-brand span { color: var(--emas); }
+    footer p { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 4px; }
+    .footer-seo { font-size: 0.7rem; color: rgba(255,255,255,0.2); margin-top: 6px; max-width: 480px; }
+
+    /* ══ WA FLOAT ═════════════════════════════════════════ */
+    .wa-btn {
+      position: fixed; bottom: 24px; right: 24px; z-index: 500;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; font-size: 1.7rem;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      animation: bounce-wa 3s ease-in-out infinite;
+    }
+    @keyframes bounce-wa {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .wa-btn .wa-label {
+      position: absolute; right: 66px;
+      background: var(--hitam); color: #fff;
+      font-size: 0.78rem; font-weight: 600;
+      white-space: nowrap; padding: 6px 12px;
+      border-radius: 6px; pointer-events: none;
+      opacity: 0; transform: translateX(6px);
+      transition: opacity .2s, transform .2s;
+    }
+    .wa-btn:hover .wa-label { opacity: 1; transform: translateX(0); }
+
+    /* ══ ANIMATIONS ═══════════════════════════════════════ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ══ RESPONSIVE ══════════════════════════════════════ */
+    @media (max-width: 768px) {
+      nav { padding: 0 4vw; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-ornament { display: none; }
+      section { padding: 60px 5vw; }
+      .alur-wrap::before { display: none; }
+      .alur-wrap { gap: 32px; }
+      .cta-box { flex-direction: column; text-align: center; }
+      .kenapa-board { flex: 1; min-width: auto; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════ -->
+<nav>
+  <a href="#beranda" class="nav-brand">
+    ☪ Pendamping Halal Tenjo
+    <span class="badge">Resmi BPJPH</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#alur">Alur</a></li>
+    <li><a href="#kenapa">Tentang</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+  <a href="https://wa.me/6289627247603?text=Halo,%20saya%20ingin%20konsultasi%20sertifikasi%20halal%20di%20Tenjo"
+     class="nav-wa" target="_blank" rel="noopener">
+    💬 WA Sekarang
+  </a>
+</nav>
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<section class="hero" id="beranda">
+  <div class="hero-content">
+    <div class="hero-tag">☪ Layanan Resmi BPJPH · Gratis</div>
+    <h1>
+      Sertifikasi Halal<br/>
+      <em>Gratis untuk UMKM</em>
+    </h1>
+    <p class="hero-desc">
+      Layanan <strong style="color:#fff">Sertifikasi Halal GRATIS</strong> bagi Pelaku Usaha Mikro
+      dan Pendampingan Proses Produk Halal di Kecamatan Tenjo, Kabupaten Bogor.
+      Kami dampingi Anda dari awal hingga sertifikat di tangan.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6289627247603?text=Halo,%20saya%20ingin%20daftar%20sertifikasi%20halal%20gratis%20di%20Tenjo"
+         class="btn-primer" target="_blank" rel="noopener">
+        💬 Mulai Konsultasi Gratis
+      </a>
+      <a href="#alur" class="btn-sekunder">Lihat Alur Proses →</a>
+    </div>
+  </div>
+
+  <!-- Islamic geometric 12-pointed star ornament -->
+  <div class="hero-ornament">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- 12 outer petals -->
+      <g fill="none" stroke="white" stroke-width="1.2">
+        <polygon points="100,10 108,85 100,100 92,85" />
+        <polygon points="100,190 108,115 100,100 92,115" />
+        <polygon points="10,100 85,108 100,100 85,92" />
+        <polygon points="190,100 115,108 100,100 115,92" />
+        <polygon points="29,29 89,93 100,100 93,89" />
+        <polygon points="171,171 111,107 100,100 107,111" />
+        <polygon points="171,29 107,93 100,100 107,89" />
+        <polygon points="29,171 93,107 100,100 89,111" />
+        <!-- inner circles -->
+        <circle cx="100" cy="100" r="50" />
+        <circle cx="100" cy="100" r="36" />
+        <circle cx="100" cy="100" r="20" />
+        <!-- outer ring -->
+        <circle cx="100" cy="100" r="90" />
+        <circle cx="100" cy="100" r="80" />
+        <!-- 12 diamonds outer -->
+        <polygon points="100,12 106,22 100,32 94,22" />
+        <polygon points="149,28 149,39 139,39 139,28" />
+        <polygon points="172,65 162,71 156,61 166,55" />
+        <polygon points="188,100 178,106 178,94 188,94" />
+        <polygon points="172,135 162,129 166,139 176,145" />
+        <polygon points="149,172 149,161 139,161 139,172" />
+        <polygon points="100,188 106,178 100,168 94,178" />
+        <polygon points="51,172 51,161 61,161 61,172" />
+        <polygon points="28,135 38,129 44,139 34,145" />
+        <polygon points="12,100 22,106 22,94 12,94" />
+        <polygon points="28,65 38,71 44,61 34,55" />
+        <polygon points="51,28 51,39 61,39 61,28" />
+      </g>
+      <!-- Center crescent -->
+      <g fill="white" fill-opacity="0.5">
+        <circle cx="100" cy="100" r="14" />
+        <circle cx="108" cy="96" r="10" fill="#4B2C7A" fill-opacity="1" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ══ REG BAR ════════════════════════════════════════════ -->
+<div class="reg-bar">
+  <div class="reg-item">
+    <span class="reg-dot"></span>
+    <span><strong>No. Registrasi P3H:</strong> 2602000861</span>
+  </div>
+  <div class="reg-item">
+    <span class="reg-dot"></span>
+    <span><strong>WA:</strong> 089627247603</span>
+  </div>
+  <div class="reg-item">
+    <span class="reg-dot"></span>
+    <span><strong>Wilayah:</strong> Kecamatan Tenjo, Kabupaten Bogor</span>
+  </div>
+  <div class="reg-item">
+    <span class="reg-dot"></span>
+    <span><strong>Layanan:</strong> Senin–Jumat, 08.00–16.00 WIB</span>
+  </div>
+</div>
+
+<!-- ══ STATS ══════════════════════════════════════════════ -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-n">100%</div>
+    <div class="stat-l">Biaya Pendampingan Gratis</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">Resmi</div>
+    <div class="stat-l">Terdaftar di BPJPH</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">≤4</div>
+    <div class="stat-l">Bulan Proses Selesai</div>
+  </div>
+  <div class="stat">
+    <div class="stat-n">24/7</div>
+    <div class="stat-l">Info via WhatsApp</div>
+  </div>
+</div>
+
+<!-- ══ LAYANAN ════════════════════════════════════════════ -->
+<section class="sec-layanan" id="layanan">
+  <div class="sec-eye">Apa yang kami lakukan</div>
+  <h2 class="sec-title">Layanan Pendampingan Halal</h2>
+  <p class="sec-desc">
+    Kami hadir khusus untuk pelaku usaha mikro di Tenjo dan sekitarnya agar
+    proses sertifikasi halal berjalan mudah dan tanpa biaya.
+  </p>
+
+  <div class="layanan-grid">
+    <div class="l-card">
+      <div class="l-icon">📋</div>
+      <h3>Konsultasi & Asesmen Awal</h3>
+      <p>Penilaian kesiapan produk dan usaha Anda untuk memenuhi syarat sertifikasi halal BPJPH secara gratis.</p>
+    </div>
+    <div class="l-card">
+      <div class="l-icon">📝</div>
+      <h3>Penyusunan Dokumen SJPH</h3>
+      <p>Membantu menyiapkan Manual Sistem Jaminan Produk Halal (SJPH) dan seluruh berkas yang dipersyaratkan.</p>
+    </div>
+    <div class="l-card">
+      <div class="l-icon">🖥️</div>
+      <h3>Pendaftaran SIHALAL</h3>
+      <p>Mendampingi pengisian dan pengajuan sertifikasi melalui portal resmi SIHALAL BPJPH secara daring.</p>
+    </div>
+    <div class="l-card">
+      <div class="l-icon">🔍</div>
+      <h3>Pendampingan Audit LPH</h3>
+      <p>Mendampingi saat pemeriksaan oleh Lembaga Pemeriksa Halal (LPH) agar proses berjalan lancar.</p>
+    </div>
+    <div class="l-card">
+      <div class="l-icon">🎓</div>
+      <h3>Pelatihan Penyelia Halal</h3>
+      <p>Pelatihan bagi Penyelia Halal internal UMKM agar mampu mengelola standar halal secara mandiri.</p>
+    </div>
+    <div class="l-card">
+      <div class="l-icon">🔄</div>
+      <h3>Perpanjangan Sertifikat</h3>
+      <p>Membantu proses perpanjangan sertifikat halal yang akan habis masa berlakunya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ALUR ════════════════════════════════════════════════ -->
+<section class="sec-alur" id="alur">
+  <div class="sec-eye">Proses Mudah</div>
+  <h2 class="sec-title">Alur Sertifikasi Halal</h2>
+  <p class="sec-desc">
+    Lima langkah sederhana dari konsultasi hingga sertifikat halal resmi di tangan Anda.
+  </p>
+
+  <div class="alur-wrap">
+    <div class="alur-step">
+      <div class="alur-num">1</div>
+      <h3>Hubungi Kami</h3>
+      <p>Konsultasi awal via WhatsApp atau kunjungan langsung. Gratis dan tanpa syarat.</p>
+    </div>
+    <div class="alur-step">
+      <div class="alur-num">2</div>
+      <h3>Persiapan Dokumen</h3>
+      <p>Kami bantu siapkan Manual SJPH, daftar bahan, dan alur proses produksi.</p>
+    </div>
+    <div class="alur-step">
+      <div class="alur-num">3</div>
+      <h3>Daftar SIHALAL</h3>
+      <p>Pengajuan online di ptsp.halal.go.id. Kami dampingi setiap langkahnya.</p>
+    </div>
+    <div class="alur-step">
+      <div class="alur-num">4</div>
+      <h3>Audit LPH</h3>
+      <p>Pemeriksaan oleh Lembaga Pemeriksa Halal. Kami hadir mendampingi Anda.</p>
+    </div>
+    <div class="alur-step">
+      <div class="alur-num">5</div>
+      <h3>Terima Sertifikat 🎉</h3>
+      <p>Sertifikat halal resmi diterbitkan BPJPH. Produk Anda siap bersaing lebih luas!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ KENAPA HALAL ════════════════════════════════════════ -->
+<section class="sec-kenapa" id="kenapa">
+  <div class="kenapa-text">
+    <div class="sec-eye">Mengapa Penting</div>
+    <h2 class="sec-title">Kenapa Harus Bersertifikat Halal?</h2>
+    <p class="sec-desc">
+      Sertifikat halal bukan sekadar kewajiban hukum — ini adalah investasi kepercayaan
+      konsumen dan pembuka akses pasar yang lebih luas.
+    </p>
+    <ul class="kenapa-list">
+      <li>
+        <span class="k-icon">⚖️</span>
+        <span>Kewajiban hukum — UU No. 33 Tahun 2014 mewajibkan produk makanan & minuman bersertifikat halal mulai 2024</span>
+      </li>
+      <li>
+        <span class="k-icon">🛒</span>
+        <span>Membuka akses ke minimarket, supermarket, dan platform belanja online yang mensyaratkan label halal</span>
+      </li>
+      <li>
+        <span class="k-icon">🌍</span>
+        <span>Peluang ekspor ke lebih dari 50 negara yang mengakui standar halal Indonesia</span>
+      </li>
+      <li>
+        <span class="k-icon">💚</span>
+        <span>Meningkatkan kepercayaan & loyalitas konsumen muslim yang mencapai 230 juta jiwa di Indonesia</span>
+      </li>
+      <li>
+        <span class="k-icon">🏆</span>
+        <span>Keunggulan kompetitif dibanding pesaing yang belum tersertifikasi halal</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="kenapa-board">
+    <!-- 8-pointed star ornament -->
+    <svg class="star-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#C89A2E" stroke-width="1.5">
+        <polygon points="50,5 58,38 50,50 42,38" />
+        <polygon points="50,95 58,62 50,50 42,62" />
+        <polygon points="5,50 38,58 50,50 38,42" />
+        <polygon points="95,50 62,58 50,50 62,42" />
+        <polygon points="12,12 40,42 50,50 42,40" />
+        <polygon points="88,88 60,58 50,50 58,60" />
+        <polygon points="88,12 58,42 50,50 58,40" />
+        <polygon points="12,88 42,58 50,50 40,60" />
+        <circle cx="50" cy="50" r="18" />
+        <circle cx="50" cy="50" r="10" />
+      </g>
+      <circle cx="50" cy="50" r="6" fill="#C89A2E" opacity="0.8"/>
+    </svg>
+
+    <div class="cert-no">No. Registrasi P3H</div>
+    <p style="color:var(--emas);font-size:1.3rem;font-weight:700;text-align:center;letter-spacing:.08em">2602000861</p>
+    <p style="margin-top:14px">Pendamping Proses Produk Halal resmi yang terdaftar dan bersertifikat dari Badan Penyelenggara Jaminan Produk Halal (BPJPH)</p>
+    <span class="reg-badge">☪ Resmi · Terpercaya · Gratis</span>
+  </div>
+</section>
+
+<!-- ══ KONTAK ══════════════════════════════════════════════ -->
+<section class="sec-kontak" id="kontak">
+  <div class="sec-eye">Hubungi kami</div>
+  <h2 class="sec-title">Siap Membantu Anda</h2>
+  <p class="sec-desc">
+    Konsultasi pertama gratis. Tidak ada biaya pendampingan untuk pelaku usaha mikro.
+  </p>
+
+  <div class="kontak-grid">
+    <div class="k-card">
+      <div class="k-icon">💬</div>
+      <div>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/6289627247603" target="_blank" rel="noopener">089627247603</a></p>
+      </div>
+    </div>
+    <div class="k-card">
+      <div class="k-icon">📍</div>
+      <div>
+        <h3>Lokasi</h3>
+        <p>Kecamatan Tenjo,<br/>Kabupaten Bogor, Jawa Barat</p>
+      </div>
+    </div>
+    <div class="k-card">
+      <div class="k-icon">🕐</div>
+      <div>
+        <h3>Jam Layanan</h3>
+        <p>Senin – Jumat<br/>08.00 – 16.00 WIB</p>
+      </div>
+    </div>
+    <div class="k-card">
+      <div class="k-icon">🏛️</div>
+      <div>
+        <h3>No. Registrasi</h3>
+        <p>P3H 2602000861</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <div>
+      <h2>Daftar Sekarang — Gratis!</h2>
+      <p>Hubungi kami via WhatsApp dan mulai perjalanan sertifikasi halal Anda hari ini.</p>
+    </div>
+    <a href="https://wa.me/6289627247603?text=Halo%20Pendamping%20Halal%20Tenjo,%20saya%20ingin%20mendaftar%20sertifikasi%20halal%20gratis%20untuk%20usaha%20saya"
+       class="btn-primer" target="_blank" rel="noopener">
+      💬 Chat WhatsApp Sekarang
+    </a>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div>
+    <div class="footer-brand">☪ Pendamping <span>Halal Tenjo</span></div>
+    <p>Pendamping Proses Produk Halal (P3H) Resmi BPJPH · No. 2602000861</p>
+    <p class="footer-seo">Sertifikasi Halal Gratis UMKM Tenjo · Bogor Barat · Jawa Barat · Pendamping Halal Kecamatan Tenjo · BPJPH · Usaha Mikro</p>
+  </div>
+  <div style="text-align:right">
+    <p style="color:rgba(255,255,255,0.6)">WA: 089627247603</p>
+    <p style="margin-top:4px">© 2025 Pendamping Halal Tenjo</p>
+  </div>
+</footer>
+
+<!-- ══ WA FLOAT ══════════════════════════════════════════ -->
+<a href="https://wa.me/6289627247603?text=Halo,%20saya%20ingin%20konsultasi%20sertifikasi%20halal%20gratis%20di%20Tenjo"
+   class="wa-btn" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  💬
+  <span class="wa-label">Chat WA Gratis</span>
+</a>
+
+</body>
+</html>
